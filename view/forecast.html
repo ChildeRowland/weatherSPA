@@ -1,0 +1,29 @@
+Forecast for {{ ctrl.we.city }}
+<hr />
+	Days: 
+	<a href="#/forecast/2"
+	   ng-class="{ 'bg-primary': ctrl.we.days === '2' }">
+		2
+	</a> | 
+	<a href="#/forecast/5"
+	   ng-class="{ 'bg-primary': ctrl.we.days === '5' }">
+		5
+	</a> | 
+	<a href="#/forecast/7"
+	   ng-class="{ 'bg-primary': ctrl.we.days === '7' }">
+		7
+	</a>
+<hr />
+<div ng-repeat="weather in ctrl.weatherResult.list">
+	<div class="row">
+	        <div class="col-md-12">
+	            <cm-weather-report>
+	            </cm-weather-report>
+	        </div>
+		</div>
+	</div>
+</div>
+
+<pre>
+	{{ ctrl.weatherResult.list }}
+</pre>

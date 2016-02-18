@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+
+	<div class="panel-heading">
+		<h3 class="panel-title"
+			ng-bind="ctrl.we.convertToDate(weather.dt) | date: 'MMM d, y' ">
+		</h3>
+	</div>
+
+	<div class="panel-body">
+		<span>
+			Daytime temperature: 
+		</span>
+		<span ng-bind="ctrl.we.convertToFahrenheit(weather.temp.day)">
+		</span>
+	</div>
+
+</div>
