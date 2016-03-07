@@ -35,7 +35,5 @@ angular.module('weatherApp', ['ngRoute', 'ngResource'])
 	self.weatherResult = weatherService.getWeather(self.we.city, self.we.days);
 }]);
 
-// python -m SimpleHTTPServer
-
 
 
